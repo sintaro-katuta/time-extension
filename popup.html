@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Time Extension</title>
+  <link rel="stylesheet" type="text/css" href="css/popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>タイマー</h1>
+    <div class="today-content">
+      <img src="images/time.png" class="today-icon" alt="timeIcon" >
+      <p class="today"></p>
+    </div>
+  </div>
+  <div class="content">
+    <button class="button add-button" value="60">1分</button>
+    <button class="button add-button" value="300">5分</button>
+    <button class="button add-button" value="600">10分</button>
+    <input type="text" value="" id="input-time" class="input">
+  </div>
+  <p class="time">0分0秒</p>
+  <div class="footer">
+    <img src="images/play.png" class="start-button" alt="再生">
+    <img src="images/stop.png" class="stop-button" alt="停止" style="display: none;">
+    <img src="images/reset.png" class="reset-button" alt="リセット">
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>

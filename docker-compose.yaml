@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web_extension:
+    image: node:14
+    container_name: web_extension_dev
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+    command: bash -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
